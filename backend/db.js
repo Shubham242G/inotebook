@@ -1,14 +1,11 @@
 const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/inotebook";
-
-async function connectToMongo() {
-    await mongoose.connect(mongoURI).then(()=> console.log("Connected to Mongo Successfully")).catch(err => console.log(err));
+require('dotenv').config();
+module.exports.connect=()=>{
+    
+    mongoose.connect(process.env.MONGODB_URI,{
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }).then(()=>{
+        console.log('MongoDB connected successfully')
+    }).catch((error)=> console.log('error: ',error))
 }
-  
-// const connectToMongo = ()=>{
-//     mongoose.connect(mongoURI, ()=>{
-//         console.log("Connected to Mongo Successfully");
-//     })
-// }
-
-module.exports = connectToMongo;
