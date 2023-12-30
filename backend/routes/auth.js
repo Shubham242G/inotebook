@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require('../models/User');
 const bcrypt = require('bcryptjs'); 
 const jwt = require("jsonwebtoken");
-const fetchuser = require('../middleware/fetchuser');
+const fetchUser = require('../middleware/fetchUser');
 
 
 const JWT_SECRET = process.env.REACT_APP_JWT_SECRET ;
@@ -95,7 +95,7 @@ router.post('/login',[
 
 })
 //ROUTE-3:Get loggedin User Details using: POST"/api/auth/getuser".Login required
-router.post('/getuser',fetchuser,async(req,res)=>{
+router.post('/getuser',fetchUser,async(req,res)=>{
     
     try{
         const userId = req.user.id;
