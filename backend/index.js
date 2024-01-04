@@ -10,7 +10,7 @@ const port = process.env.PORT
 
 app.use(cors(
   {
-    origin: ["https://inotebook-rosy.vercel.app"],
+    origin: ["https://inotebook-back-c3ve.onrender.com"],
     methods:["POST","GET"],
     credentials: true
   }
@@ -40,7 +40,4 @@ app.listen(port, () => {
   console.log(`iNotebook backend listening on port ${port}`)
 })
 
-
-module.exports = app;
-
-
+module.exports = app
