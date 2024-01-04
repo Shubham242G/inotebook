@@ -40,9 +40,7 @@ app.listen(port, () => {
   console.log(`iNotebook backend listening on port ${port}`)
 })
 
-<<<<<<< Updated upstream
+
 module.exports = app;
 
-=======
-module.exports = app;
->>>>>>> Stashed changes
+
