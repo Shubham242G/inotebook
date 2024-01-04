@@ -8,7 +8,13 @@ connect.connect();
 const app = express()
 const port = process.env.PORT
 
-app.use(cors())
+app.use(cors(
+  {
+    origin: ["https://inotebook-rosy.vercel.app"],
+    methods:["POST","GET"],
+    credentials: true
+  }
+))
 app.use(express.json())
 
 // available Routes
@@ -34,5 +40,9 @@ app.listen(port, () => {
   console.log(`iNotebook backend listening on port ${port}`)
 })
 
+<<<<<<< Updated upstream
 module.exports = app;
 
+=======
+module.exports = app;
+>>>>>>> Stashed changes
