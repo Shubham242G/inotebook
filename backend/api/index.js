@@ -1,4 +1,4 @@
-const connect = require('./db')
+const connect = require('../db')
 const express = require('express')
 var cors = require('cors')
 require('dotenv').config();
@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json())
 
 // available Routes
-app.use('/api/auth',require('./routes/auth'))
-app.use('/api/notes',require('./routes/notes'))
+app.use('/api/auth',require('../routes/auth'))
+app.use('/api/notes',require('../routes/notes'))
 
 
 // app.get('/', (req, res) => {
@@ -33,4 +33,4 @@ app.listen(port, () => {
   console.log(`iNotebook backend listening on port ${port}`)
 })
 
-module.exports = app
+
