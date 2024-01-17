@@ -10,7 +10,10 @@
         {
             "src": "/(.*)",
             "dest": "/"
-        }
+        },
+        {
+            "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+          }
     ],
     "env":{
         "REACT_APP_JWT_SECRET":"Harryisagoodb$oy",
