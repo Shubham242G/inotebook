@@ -10,14 +10,15 @@
         {
             "src": "/(.*)",
             "dest": "/"
-        },
-        {
-            "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
-          }
-    ],
-    "env":{
-        "REACT_APP_JWT_SECRET":"Harryisagoodb$oy",
-        "REACT_APP_MONGODB_URI":"mongodb+srv://2shubham4godiyal2:Galatasaray@cluster0.vcomh3x.mongodb.net/?retryWrites=true&w=majority",
-        "PORT":"5000"
         }
+    ],
+    "rewrites": [
+        { 
+            "source": "/api/(.*)",
+             "destination": "/api" 
+        }
+    ]
+    
+    
+
 }
