@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-require('dotenv').config({path:'.env'});
+require('dotenv').config();
 mongoose.set('strictQuery', true);
 module.exports.connect=()=>{
     
