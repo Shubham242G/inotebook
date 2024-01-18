@@ -1,4 +1,4 @@
-const connect = require('../db')
+const connect = require('./db')
 const express = require('express')
 var cors = require('cors')
 require('dotenv').config();
@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json())
 
 // available Routes
-app.get('/api/auth',require('../routes/auth'))
-app.get('/api/notes',require('../routes/notes'))
+app.get('/api/auth',require('./routes/auth'))
+app.get('/api/notes',require('./routes/notes'))
 
 
 // app.get('/', (req, res) => {
