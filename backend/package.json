@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "iNotebook - Your notebook on the cloud",
   "main": "api/index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node api/index.js",
-    "server": "nodemon api/index.js",
-    "vercel-build":"echo hello"
+    "server": "nodemon api/index.js"
   },
   "author": "",
   "license": "ISC",
