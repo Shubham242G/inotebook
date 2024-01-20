@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json())
 
 // available Routes
-app.get('/api/auth',require('./routes/auth'))
-app.get('/api/notes',require('./routes/notes'))
+app.use('/api/auth',require('./routes/auth'))
+app.use('/api/notes',require('./routes/notes'))
 
 
 // app.get('/', (req, res) => {

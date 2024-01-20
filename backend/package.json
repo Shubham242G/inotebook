@@ -2,11 +2,11 @@
   "name": "inotebook-backend",
   "version": "1.0.0",
   "description": "iNotebook - Your notebook on the cloud",
-  "main": "api/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "server": "nodemon api/index.js"
+    "server": "nodemon index.js"
   },
   "author": "shubham",
   "license": "ISC",
