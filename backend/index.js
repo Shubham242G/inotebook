@@ -15,9 +15,9 @@ app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
 
 
-// app.get('/', (req, res) => {
-//   res.send("Shubham's server !")
-// })
+app.get('/', (req, res) => {
+  res.send("Shubham's server !")
+})
 
 // if (process.env.NODE_ENV == "production") {
 //   app.use(express.static("frontend/build"));
